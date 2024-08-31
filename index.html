@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hyperlocal Event and Service Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Submit Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="event-list">
+            <h2>Upcoming Events</h2>
+            <div class="event-item">
+                <h3>Farmers' Market</h3>
+                <p>Date: September 5, 2024</p>
+                <p>Location: Central Park</p>
+                <p>Description: Fresh produce from local farmers.</p>
+            </div>
+            
+
+            <div class="event-item">
+                <h3>Community Yoga Class</h3>
+                <p>Date: September 10, 2024</p>
+                <p>Location: Riverside Park</p>
+                <p>Description: Free yoga class open to all skill levels.</p>
+            </div>
+            <!-- Add more event items as needed -->
+        </section>
+
+        <section class="submit-event">
+            <h2>Submit a New Event</h2>
+            <form action="#" method="post">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" name="event-description" rows="4" required></textarea>
+
+                <button type="submit">Submit Event</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hyperlocal Event and Service Platform</p>
+    </footer>
+</body>
+</html>
+

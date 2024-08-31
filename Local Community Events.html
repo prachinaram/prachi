@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Events</title>
+    <link rel="stylesheet" href="./Local Community Events_files/style.css">
+</head>
+<body>
+    <header>
+        <h1>Hyperlocal Event and Service Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Events</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Services</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Submit Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="event-list">
+            <h2>Upcoming Events</h2>
+            <div class="event-item">
+                <h3>Farmers' Market</h3>
+                <p>Date: September 5, 2024</p>
+                <p>Location: Central Park</p>
+                <p>Description: Fresh produce from local farmers.</p>
+            </div>
+            
+
+            <div class="event-item">
+                <h3>Community Yoga Class</h3>
+                <p>Date: September 10, 2024</p>
+                <p>Location: Riverside Park</p>
+                <p>Description: Free yoga class open to all skill levels.</p>
+            </div>
+            <!-- Add more event items as needed -->
+        </section>
+
+        <section class="submit-event">
+            <h2>Submit a New Event</h2>
+            <form action="http://127.0.0.1:5500/index.html#" method="post">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required="">
+
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required="">
+
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required="">
+
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" name="event-description" rows="4" required=""></textarea>
+
+                <button type="submit">Submit Event</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Hyperlocal Event and Service Platform</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
